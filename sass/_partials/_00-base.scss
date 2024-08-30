@@ -1,0 +1,98 @@
+
+
+/* ==========================================================================
+  MEDIA QUERY MANAGER
+========================================================================== */
+
+@mixin respond($breakpoint)  {
+  @if $breakpoint == phone {
+    @media (max-width: $breakpoint-smartphone) { @content};
+    // MAX = 400px;
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) { @content};
+    // MAX = 400px
+  }
+  @if $breakpoint == laptop {
+    @media (max-width: $breakpoint-laptop) { @content};
+    // MAX = 950px
+  }
+  @if $breakpoint == min-desktop {
+    @media (min-width: $breakpoint-laptop) { @content};
+  }
+  @if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) { @content};
+    // MAX = 1200px
+  }
+  @if $breakpoint == desktop-large {
+    @media (min-width: $breakpoint-desktop-large) { @content};
+    // MIN = 1200px
+  }
+}
+
+
+/* ==========================================================================
+  COLOR VARIABLES
+========================================================================== */
+
+$color-body-background: #F8F8F8;
+$color-goldyellow: rgb(210, 169, 108);
+
+$color-gray: #808080;
+$color-darkgray: #202020;
+
+
+/* ==========================================================================
+  BREAKPOINTS
+========================================================================== */
+
+$breakpoint-smartphone: 400px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 950px;
+$breakpoint-desktop: 1200px;
+$breakpoint-desktop-large: 1201px;
+
+//  @media screen and (max-width: $breakpoint-smartphone) {}
+
+
+/* ==========================================================================
+  FONTS
+========================================================================== */
+
+// SPÄTER FONT-SIZES FÜR ALLE ENDGERÄTE
+
+
+/* ==========================================================================
+  BASIC BODY STYLING
+========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-body-background;
+  background-image: radial-gradient(	#E0E0E0 2px, transparent 2px);
+  background-size: 50px 50px;
+
+  font-family: 'Roboto', sans-serif;
+  color: $color-darkgray;
+
+  width: 1800px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  @include respond(laptop) {
+
+  }
+
+  @include respond(tablet) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include respond(phone) {
+
+  }
+}

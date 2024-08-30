@@ -1,0 +1,625 @@
+/* ==========================================================================
+  IMPORTS
+========================================================================== */
+/* ==========================================================================
+  MEDIA QUERY MANAGER
+========================================================================== */
+/* ==========================================================================
+  COLOR VARIABLES
+========================================================================== */
+/* ==========================================================================
+  BREAKPOINTS
+========================================================================== */
+/* ==========================================================================
+  FONTS
+========================================================================== */
+/* ==========================================================================
+  BASIC BODY STYLING
+========================================================================== */
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #F8F8F8;
+  background-image: radial-gradient(#E0E0E0 2px, transparent 2px);
+  background-size: 50px 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+  width: 1800px;
+  margin: 0 auto;
+  padding: 0; }
+  @media (max-width: 768px) {
+    body {
+      margin: 0;
+      padding: 0; } }
+
+/* ==========================================================================
+  HEADER STYLING
+========================================================================== */
+.kopfbereich {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .kopfbereich_logo {
+    width: 300px;
+    max-height: 100px;
+    align-items: center;
+    margin: 30px 0; }
+    @media (max-width: 768px) {
+      .kopfbereich_logo {
+        width: 250px;
+        max-height: 75px; } }
+    .kopfbereich_logo img {
+      width: 100%;
+      height: 100%;
+      align-self: center; }
+  .kopfbereich nav {
+    align-self: center; }
+    .kopfbereich nav ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      align-items: center; }
+      .kopfbereich nav ul li {
+        padding: 8px 20px; }
+        .kopfbereich nav ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #000;
+          letter-spacing: 1.3px;
+          font-weight: 600;
+          font-size: 1.3rem; }
+        .kopfbereich nav ul li .white {
+          color: #fff;
+          font-size: 1.05rem;
+          letter-spacing: 1.5px;
+          padding: 10px 20px 10px 20px;
+          padding: 0;
+          margin: 0;
+          align-self: baseline; }
+      .kopfbereich nav ul li:last-child {
+        background-color: #000;
+        color: #fff;
+        margin: 0 0 0 15px; }
+
+/* ==========================================================================
+  LANDING WALLPAPER STYLING
+========================================================================== */
+.landing-wallpaper {
+  width: 100%;
+  height: 50vh;
+  margin: 10vh 0 15vh 0;
+  display: flex;
+  flex-direction: row;
+  position: relative; }
+  .landing-wallpaper_heading {
+    align-self: center; }
+    .landing-wallpaper_heading h1 {
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0;
+      font-size: 5rem;
+      margin: 0 0 15px 0; }
+    .landing-wallpaper_heading p {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0;
+      margin: 0 0 0 0; }
+    .landing-wallpaper_heading p:not(:first-child) {
+      font-size: 1.3rem;
+      margin: 0 0 75px 0; }
+    .landing-wallpaper_heading p:not(:first-child)::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f3c5";
+      margin-right: 5px; }
+    .landing-wallpaper_heading a {
+      background-color: #202020;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 15px 60px;
+      font-size: 1.1rem; }
+  .landing-wallpaper .x-one {
+    position: absolute;
+    top: 10%;
+    right: 5%; }
+    .landing-wallpaper .x-one i {
+      font-size: 1.3rem; }
+  .landing-wallpaper .x-two {
+    position: absolute;
+    bottom: 4%;
+    left: 53%; }
+    .landing-wallpaper .x-two i {
+      font-size: 1.3rem; }
+  .landing-wallpaper .x-three {
+    position: absolute;
+    top: 0%;
+    left: 15%; }
+    .landing-wallpaper .x-three i {
+      font-size: 1.3rem; }
+
+/* ==========================================================================
+  LANDING SERVICE STYLING
+========================================================================== */
+.landing-services {
+  width: 100%; }
+  .landing-services_service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    margin: 17.5vh 0; }
+    .landing-services_service .image {
+      width: 60%;
+      height: 100%;
+      background-color: gray;
+      order: 2; }
+      .landing-services_service .image img {
+        width: 100%;
+        height: 100%; }
+    .landing-services_service .text {
+      width: 30%;
+      align-self: center;
+      order: 1; }
+      .landing-services_service .text h1 {
+        text-transform: uppercase;
+        letter-spacing: .6px;
+        font-size: 2.1rem;
+        font-weight: 600;
+        margin: 10px 0 10px 0; }
+      .landing-services_service .text small {
+        font-size: 1.25rem;
+        line-height: 1.1;
+        margin: 0;
+        display: block;
+        font-weight: 600; }
+      .landing-services_service .text hr {
+        width: 100px;
+        margin: 0px 0 0px 0;
+        background-color: #d2a96c;
+        height: 3px;
+        border: 0; }
+      .landing-services_service .text p {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        letter-spacing: .4px;
+        padding: 0;
+        margin: 35px 0; }
+      .landing-services_service .text a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        letter-spacing: .7px;
+        color: #808080; }
+      .landing-services_service .text a::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f061";
+        margin-right: 10px; }
+    .landing-services_service .x-one {
+      position: absolute;
+      top: 5%;
+      right: 5%; }
+      .landing-services_service .x-one i {
+        font-size: 1.3rem; }
+    .landing-services_service .x-two {
+      position: absolute;
+      bottom: 7%;
+      left: 40%; }
+      .landing-services_service .x-two i {
+        font-size: 1.3rem; }
+
+.landing-services:nth-of-type(2) .x-one {
+  position: absolute;
+  top: 5%;
+  left: 5%; }
+  .landing-services:nth-of-type(2) .x-one i {
+    font-size: 1.3rem; }
+
+.landing-services:nth-of-type(2) .x-two {
+  position: absolute;
+  bottom: 4%;
+  left: 15%; }
+  .landing-services:nth-of-type(2) .x-two i {
+    font-size: 1.3rem; }
+
+.landing-services:nth-of-type(3) .text {
+  order: 2; }
+
+.landing-services:nth-of-type(3) .image {
+  order: 1; }
+
+.landing-services:nth-of-type(3) .x-one {
+  position: absolute;
+  top: 5%;
+  right: 5%; }
+  .landing-services:nth-of-type(3) .x-one i {
+    font-size: 1.3rem; }
+
+.landing-services:nth-of-type(3) .x-two {
+  position: absolute;
+  bottom: 7%;
+  left: 70%; }
+  .landing-services:nth-of-type(3) .x-two i {
+    font-size: 1.3rem; }
+
+.landing-services:nth-of-type(4) .x-one {
+  position: absolute;
+  top: 15%;
+  left: 10%; }
+  .landing-services:nth-of-type(4) .x-one i {
+    font-size: 1.3rem; }
+
+/* ==========================================================================
+  LANDING CONTACT STYLING
+========================================================================== */
+.landing-contact {
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row; }
+  @media (max-width: 768px) {
+    .landing-contact {
+      width: 100%;
+      margin: 50px 0 50px 0; } }
+  .landing-contact_details {
+    width: 40%;
+    padding: 130px 100px;
+    background-color: #202020;
+    color: #fff;
+    box-shadow: 10px 20px 20px #888888; }
+    @media (max-width: 768px) {
+      .landing-contact_details {
+        width: 100%;
+        padding: 50px; } }
+    .landing-contact_details h1 {
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      font-size: 1.9rem;
+      font-weight: 600;
+      margin: 10px 0 20px 0; }
+    .landing-contact_details hr {
+      width: 100px;
+      margin: 0px 0 60px 0;
+      background-color: #d2a96c;
+      height: 3px;
+      border: 0; }
+    .landing-contact_details p {
+      font-size: 1.1rem;
+      line-height: 1.4;
+      letter-spacing: 1px;
+      color: #808080; }
+    .landing-contact_details a {
+      font-size: 1.1rem;
+      line-height: 1.4;
+      letter-spacing: 1px;
+      color: #808080;
+      text-decoration: none; }
+    .landing-contact_details p:nth-child(1)::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 400;
+      content: "\f1ea"; }
+    .landing-contact_details i {
+      margin: 0 0px 0 0;
+      color: red;
+      display: inline-block; }
+    .landing-contact_details table {
+      padding: 0;
+      margin: 0; }
+      .landing-contact_details table tr td {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        letter-spacing: 1px;
+        color: #808080; }
+  .landing-contact_map {
+    width: 60%;
+    height: 100%;
+    align-self: center;
+    margin: 0 0 0 -150px; }
+    @media (max-width: 768px) {
+      .landing-contact_map {
+        display: none; } }
+    .landing-contact_map iframe {
+      width: 100%;
+      height: 500px; }
+
+/* ==========================================================================
+  ABOUT STYLING
+========================================================================== */
+.about-template {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10vh 0 15vh 0; }
+  .about-template_heading {
+    width: 40%;
+    margin: 0 0 0 60%;
+    text-align: right; }
+    .about-template_heading h1 {
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      font-size: 2.1rem;
+      font-weight: 600;
+      margin: 10px 0 10px 0; }
+    .about-template_heading small {
+      font-size: 1.25rem;
+      line-height: 1.1;
+      margin: 0;
+      display: block;
+      font-weight: 600; }
+    .about-template_heading hr {
+      width: 100px;
+      margin: 0px 0 0px 0;
+      background-color: #d2a96c;
+      height: 3px;
+      border: 0; }
+    .about-template_heading p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      letter-spacing: .4px;
+      padding: 0;
+      margin: 35px 0;
+      text-align: justify; }
+  .about-template_row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5vh 0; }
+    .about-template_row-1_staff {
+      display: flex;
+      flex-direction: column;
+      width: 20%; }
+      .about-template_row-1_staff-image {
+        width: 100%;
+        height: 460px; }
+        .about-template_row-1_staff-image img {
+          width: 100%;
+          height: 100%; }
+      .about-template_row-1_staff-text {
+        max-width: 100%;
+        padding: 20px 30px 40px 30px;
+        background: #F8F8F8; }
+        .about-template_row-1_staff-text h1 {
+          text-transform: uppercase;
+          letter-spacing: .6px;
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin: 10px 0 5px 0; }
+        .about-template_row-1_staff-text small {
+          padding: 0;
+          margin: 0; }
+        .about-template_row-1_staff-text p {
+          padding: 0;
+          margin: 20px 0 10px 0;
+          font-size: 1.1rem;
+          line-height: 1.7;
+          letter-spacing: .4px; }
+        .about-template_row-1_staff-text p::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f2a0";
+          margin-right: 10px; }
+        .about-template_row-1_staff-text a {
+          text-decoration: none;
+          color: #202020;
+          font-size: 1.1rem;
+          line-height: 1.7;
+          letter-spacing: .4px; }
+        .about-template_row-1_staff-text a::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f0e0";
+          margin-right: 10px; }
+  .about-template_row-2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10vh auto 0vh auto; }
+    .about-template_row-2 .timeline {
+      width: 100%;
+      margin: 25px auto;
+      display: flex;
+      flex-direction: row; }
+      .about-template_row-2 .timeline .leer {
+        width: 50%;
+        order: 1; }
+      .about-template_row-2 .timeline .eintrag {
+        width: 50%;
+        order: 2;
+        position: relative;
+        border-left: 2px solid #202020;
+        padding: 2.5px 0px; }
+        .about-template_row-2 .timeline .eintrag p {
+          font-size: 1.2rem;
+          line-height: 1.7;
+          letter-spacing: .4px;
+          padding: 0 0 0 20px; }
+        .about-template_row-2 .timeline .eintrag-x-one {
+          position: absolute;
+          bottom: -35px;
+          left: -7.5px; }
+          .about-template_row-2 .timeline .eintrag-x-one i {
+            font-size: 1.3rem; }
+    .about-template_row-2 .timeline:nth-of-type(even) .leer {
+      order: 2; }
+    .about-template_row-2 .timeline:nth-of-type(even) .eintrag {
+      order: 1;
+      border: none;
+      border-right: 2px solid #202020; }
+      .about-template_row-2 .timeline:nth-of-type(even) .eintrag p {
+        text-align: right;
+        padding: 0 20px 0 0; }
+      .about-template_row-2 .timeline:nth-of-type(even) .eintrag-x-one {
+        position: absolute;
+        bottom: -35px;
+        left: 99.1%; }
+        .about-template_row-2 .timeline:nth-of-type(even) .eintrag-x-one i {
+          font-size: 1.3rem; }
+
+.neu-about-template_row-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 85%;
+  margin: 10vh 0 15vh 15%; }
+  .neu-about-template_row-1 .mitarbeiter {
+    width: 23%;
+    margin: 0 12.5% 0 0; }
+    .neu-about-template_row-1 .mitarbeiter-image {
+      width: 100%;
+      height: 450px;
+      background-color: black; }
+      .neu-about-template_row-1 .mitarbeiter-image img {
+        width: 100%;
+        height: 100%;
+        display: none;}
+    .neu-about-template_row-1 .mitarbeiter-text {
+      max-width: 100%;
+      padding: 20px 30px 40px 30px;
+      background: #F8F8F8;
+      position: relative; }
+      .neu-about-template_row-1 .mitarbeiter-text h1 {
+        text-transform: uppercase;
+        letter-spacing: .6px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 10px 0 5px 0; }
+      .neu-about-template_row-1 .mitarbeiter-text small {
+        padding: 0;
+        margin: 0; }
+      .neu-about-template_row-1 .mitarbeiter-text p {
+        padding: 0;
+        margin: 20px 0 10px 0;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        letter-spacing: .4px; }
+      .neu-about-template_row-1 .mitarbeiter-text p::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f2a0";
+        margin-right: 10px; }
+      .neu-about-template_row-1 .mitarbeiter-text a {
+        text-decoration: none;
+        color: #202020;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        letter-spacing: .4px; }
+      .neu-about-template_row-1 .mitarbeiter-text a::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f0e0";
+        margin-right: 10px; }
+      .neu-about-template_row-1 .mitarbeiter-text:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 25%;
+        border: 2px solid #202020; }
+    .neu-about-template_row-1 .mitarbeiter:nth-of-type(1) {
+      order: 1;
+      margin: 0 0 5% 0; }
+    .neu-about-template_row-1 .mitarbeiter:nth-of-type(2) {
+      order: 3; }
+    .neu-about-template_row-1 .mitarbeiter:nth-of-type(3) {
+      order: 4; }
+  .neu-about-template_row-1 .heading {
+    width: 45%;
+    margin: 0 0 50px 30%;
+    order: 2;
+    align-self: center;
+    text-align: right; }
+    .neu-about-template_row-1 .heading h1 {
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      font-size: 2.1rem;
+      font-weight: 600;
+      margin: 10px 0 10px 0; }
+    .neu-about-template_row-1 .heading small {
+      font-size: 1.25rem;
+      line-height: 1.1;
+      margin: 0;
+      display: block;
+      font-weight: 600; }
+    .neu-about-template_row-1 .heading hr {
+      width: 100px;
+      margin: 0px 0 0px 0;
+      background-color: #d2a96c;
+      height: 3px;
+      border: 0;
+      text-align: right;
+      margin: 0 0 0 auto; }
+    .neu-about-template_row-1 .heading p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      letter-spacing: .4px;
+      padding: 0;
+      margin: 35px 0 45px 0; }
+    .neu-about-template_row-1 .heading a {
+      background-color: #202020;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 15px 50px;
+      font-size: 1rem; }
+  .neu-about-template_row-1 .x-one {
+    position: absolute;
+    top: 0;
+    left: -15%; }
+    .neu-about-template_row-1 .x-one i {
+      font-size: 1.3rem; }
+  .neu-about-template_row-1 .x-two {
+    position: absolute;
+    bottom: 30%;
+    right: 15%; }
+    .neu-about-template_row-1 .x-two i {
+      font-size: 1.3rem; }
+
+/* ==========================================================================
+  FOOTER STYLING
+========================================================================== */
+.fussbereich {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .fussbereich_logo {
+    width: 300px;
+    max-height: 100px;
+    align-items: center;
+    margin: 30px 0; }
+    @media (max-width: 768px) {
+      .fussbereich_logo {
+        width: 250px;
+        max-height: 75px; } }
+    .fussbereich_logo img {
+      width: 100%;
+      height: 100%;
+      align-self: center; }
+  .fussbereich nav {
+    align-self: center; }
+    .fussbereich nav ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .fussbereich nav ul li {
+        padding: 5px 20px; }
+        .fussbereich nav ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #000;
+          letter-spacing: 1px;
+          font-size: 1rem; }

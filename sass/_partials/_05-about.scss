@@ -1,0 +1,379 @@
+
+
+/* ==========================================================================
+  ABOUT STYLING
+========================================================================== */
+
+.about-template {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10vh 0 15vh 0;
+
+  &_heading {
+    width: 40%;
+    margin: 0 0 0 60%;
+    text-align: right;
+
+    & h1 {
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      font-size: 2.1rem;
+      font-weight: 600;
+      margin: 10px 0 10px 0;
+    }
+
+    & small {
+      font-size: 1.25rem;
+      line-height: 1.1;
+      margin: 0;
+      display: block;
+      font-weight: 600;
+    }
+
+    & hr {
+      width: 100px;
+      margin: 0px 0 0px 0;
+      background-color: $color-goldyellow;
+      height: 3px;
+      border: 0;
+    }
+
+    & p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      letter-spacing: .4px;
+      padding: 0;
+      margin: 35px 0;
+      text-align: justify;
+    }
+  }
+
+  &_row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5vh 0;
+
+    &_staff {
+      display: flex;
+      flex-direction: column;
+
+      width: 20%;
+
+      &-image {
+        width: 100%;
+        height:460px;
+
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-text {
+        max-width: 100%;
+        padding: 20px 30px 40px 30px;
+        background: #F8F8F8;
+
+        & h1 {
+          text-transform: uppercase;
+          letter-spacing: .6px;
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin: 10px 0 5px 0;
+        }
+
+        & small {
+          padding: 0;
+          margin: 0;
+        }
+
+        & p {
+          padding: 0;
+          margin: 20px 0 10px 0;
+          font-size: 1.1rem;
+          line-height: 1.7;
+          letter-spacing: .4px;
+        }
+
+        & p::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f2a0";
+          margin-right: 10px;
+        }
+
+        & a {
+          text-decoration: none;
+          color: $color-darkgray;
+          font-size: 1.1rem;
+          line-height: 1.7;
+          letter-spacing: .4px;
+        }
+
+        & a::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f0e0";
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &_row-2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10vh auto 0vh auto;
+
+    & .timeline {
+      width: 100%;
+      margin: 25px auto;
+      display: flex;
+      flex-direction: row;
+
+      & .leer {
+        width: 50%;
+        order: 1;
+      }
+
+      & .eintrag {
+        width: 50%;
+        order: 2;
+        position: relative;
+        border-left: 2px solid $color-darkgray;
+        padding: 2.5px 0px;
+
+        & p {
+          font-size: 1.2rem;
+          line-height: 1.7;
+          letter-spacing: .4px;
+          padding: 0 0 0 20px;
+        }
+
+        &-x-one {
+          position: absolute;
+          bottom: -35px;
+          left: -7.5px;
+
+          & i {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+
+    .timeline:nth-of-type(even) {
+
+
+      & .leer {
+        order: 2;
+      }
+
+      & .eintrag {
+        order: 1;
+        border: none;
+        border-right: 2px solid $color-darkgray;
+
+        & p {
+          text-align: right;
+          padding: 0 20px 0 0;
+        }
+
+        &-x-one {
+          position: absolute;
+          bottom: -35px;
+          left: 99.1%;
+
+          & i {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
+.neu-about-template {
+
+  &_row-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+    width: 85%;
+    margin: 10vh 0 15vh 15%;
+
+    & .mitarbeiter {
+      width: 23%;
+      margin: 0 12.5% 0 0;
+
+
+      &-image {
+        width: 100%;
+        height: 450px;
+
+        background-color: black;
+
+        & img {
+          width: 100%;
+          height: 400%;
+
+          display: none;
+        }
+      }
+
+      &-text {
+        max-width: 100%;
+        padding: 20px 30px 40px 30px;
+        background: $color-body-background;
+        position: relative;
+
+        & h1 {
+          text-transform: uppercase;
+          letter-spacing: .6px;
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin: 10px 0 5px 0;
+        }
+
+        & small {
+          padding: 0;
+          margin: 0;
+        }
+
+        & p {
+          padding: 0;
+          margin: 20px 0 10px 0;
+          font-size: 1.1rem;
+          line-height: 1.7;
+          letter-spacing: .4px;
+        }
+
+        & p::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f2a0";
+          margin-right: 10px;
+        }
+
+        & a {
+          text-decoration: none;
+          color: $color-darkgray;
+          font-size: 1.1rem;
+          line-height: 1.7;
+          letter-spacing: .4px;
+        }
+
+        & a::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f0e0";
+          margin-right: 10px;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 25%;
+          border: 2px solid $color-darkgray;
+        }
+      }
+
+      &:nth-of-type(1) {
+        order: 1;
+        margin: 0 0 5% 0;
+      }
+      &:nth-of-type(2) {
+        order: 3;
+      }
+      &:nth-of-type(3) {
+        order: 4;
+      }
+    }
+
+
+    & .heading {
+      width: 45%;
+      margin: 0 0 50px 30%;
+      order: 2;
+      align-self: center;
+      text-align: right;
+
+      & h1 {
+        text-transform: uppercase;
+        letter-spacing: .6px;
+        font-size: 2.1rem;
+        font-weight: 600;
+        margin: 10px 0 10px 0;
+      }
+
+      & small {
+        font-size: 1.25rem;
+        line-height: 1.1;
+        margin: 0;
+        display: block;
+        font-weight: 600;
+      }
+
+      & hr {
+        width: 100px;
+        margin: 0px 0 0px 0;
+        background-color: $color-goldyellow;
+        height: 3px;
+        border: 0;
+        text-align:right; margin: 0 0 0 auto;
+      }
+
+      & p {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        letter-spacing: .4px;
+        padding: 0;
+        margin: 35px 0 45px 0;
+
+      }
+
+      & a {
+        background-color: $color-darkgray;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 15px 50px;
+        font-size: 1rem;
+      }
+    }
+
+    .x-one {
+      position: absolute;
+      top: 0;
+      left: -15%;
+
+      & i {
+        font-size: 1.3rem;
+      }
+    }
+
+    .x-two {
+      position: absolute;
+      bottom: 30%;
+      right: 15%;
+
+      & i {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

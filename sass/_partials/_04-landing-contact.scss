@@ -1,0 +1,103 @@
+
+
+/* ==========================================================================
+  LANDING CONTACT STYLING
+========================================================================== */
+
+.landing-contact {
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+
+  @include respond(tablet) {
+    width: 100%;
+    margin: 50px 0 50px 0;
+  }
+
+  &_details {
+    width: 40%;
+    padding: 130px 100px;
+    background-color: $color-darkgray;
+    color: #fff;
+    box-shadow: 10px 20px 20px #888888;
+
+    @include respond(tablet) {
+      width: 100%;
+      padding: 50px;
+    }
+
+    & h1 {
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      font-size: 1.9rem;
+      font-weight: 600;
+      margin: 10px 0 20px 0;
+    }
+
+    & hr {
+      width: 100px;
+      margin: 0px 0 60px 0;
+      background-color: $color-goldyellow;
+      height: 3px;
+      border: 0;
+    }
+
+    & p {
+      font-size: 1.1rem;
+      line-height: 1.4;
+      letter-spacing: 1px;
+      color: $color-gray;
+    }
+
+    & a {
+      font-size: 1.1rem;
+      line-height: 1.4;
+      letter-spacing: 1px;
+      color: 	$color-gray;
+      text-decoration: none;
+    }
+
+    & p:nth-child(1)::before {
+      font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f1ea";
+    }
+
+
+    & i {
+      margin: 0 0px 0 0;
+      color: red;
+      display: inline-block;
+    }
+
+    & table {
+      padding: 0;
+      margin: 0;
+
+      & tr {
+        & td {
+          font-size: 1.1rem;
+          line-height: 1.4;
+          letter-spacing: 1px;
+          color: 	#808080;
+        }
+      }
+    }
+
+  }
+
+  &_map {
+    width: 60%;
+    height: 100%;
+    align-self: center;
+    margin: 0 0 0 -150px;
+
+    @include respond(tablet) {
+      display: none;
+    }
+
+    & iframe {
+      width: 100%;
+      height: 500px;
+    }
+  }
+}
