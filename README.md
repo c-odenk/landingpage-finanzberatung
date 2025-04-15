@@ -1,7 +1,6 @@
-#  Ern Gruppe | Finanz- und Immobilienberatung 
-<br>
-Landingpage für eine Finanz- und Immobilienberatung. Hierbei handelt es sich um eines meiner ersten Projekte, welches ich zu lernzwecken umgesetzt habe. Es wurde nie veröffentlicht. 
-<br>
+#  💼 Ern Gruppe | Finanz- und Immobilienberatung
+
+Diese Landingpage wurde im Rahmen eines Lernprojekts für eine Finanz- und Immobilienberatung entwickelt. Es handelt sich um eines meiner ersten Projekte, das ich zu Lernzwecken umgesetzt habe. Das Projekt wurde nie veröffentlicht.
 <br>
 <br>
 
